@@ -16,3 +16,26 @@ window.onscroll = function() {
   // Set the opacity based on the scroll position
   navbar.style.opacity = scrollPosition > 100 ? "1" : "0"; // Adjust the scroll position value as needed
 };
+
+
+  var navLinks = document.querySelectorAll('nav ul li a');
+  var sections = document.querySelectorAll('main section');
+
+  function highlightNav() {
+    var scrollPosition = window.scrollY || document.documentElement.scrollTop;
+
+    sections.forEach(function(section, index) {
+      var top = section.offsetTop;
+      var bottom = top + Math.max(section.offsetHeight, 50);
+      console.log(section.offsetHeight);
+
+      if (scrollPosition >= top && scrollPosition < bottom) {
+        navLinks.forEach(function(link) {
+          link.classList.remove('active');
+        });
+        navLinks[index].classList.add('active');
+      }
+    });
+  }
+
+  window.addEventListener('scroll', highlightNav);
