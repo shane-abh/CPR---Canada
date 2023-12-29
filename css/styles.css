@@ -64,7 +64,7 @@ nav {
     line-height: 6rem;
 }
 
-.char{
+.char {
     transform: translateY(150px);
     transition: transform 0.5s;
 }
@@ -102,7 +102,7 @@ button a {
 }
 
 h2 {
-    font-size: 2em;
+    font-size: 3em;
     margin: 1em 0;
     width: 100%;
     text-align: center;
@@ -124,17 +124,22 @@ video {
 
 .events {
     margin: 2em 0;
+    
     /* border-radius: 1em; */
     background: linear-gradient(119deg, rgba(215, 26, 33, 0.22) 5.98%, rgba(62, 59, 206, 0.22) 94.03%);
 }
 
 .event-container {
     padding: 1em;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
 }
 
 .event-container img {
-    width: 60vw;
+    width: 90vw;
     border-radius: 1em;
+
 }
 
 
@@ -197,7 +202,21 @@ footer {
     color: white;
 }
 
+@media screen and (min-width: 300px) {
+    .hero-content h1 {
+        font-size: 3em;
+        line-height: 5rem;
+    }
+
+    video{
+        width: 100%;
+        
+    }
+}
+
 @media screen and (min-width: 768px) {
+
+
 
     header {
 
@@ -228,19 +247,19 @@ footer {
 
 
 
- nav:hover{
-    opacity: 1;
- }
+    nav:hover {
+        opacity: 1;
+    }
 
     nav ul a {
         display: inline;
         background-color: rgba(255, 255, 255, 0);
         color: white;
         text-align: center;
-        padding: 0.8em;
+        padding: 0 0.5em;
         text-decoration: none;
         font-size: 1.2em;
-        margin: 1em;
+        margin:  0 1em;
         border-radius: 1em;
     }
 
@@ -253,7 +272,12 @@ footer {
 
     .hero {
         background-image: url('../images/pexels-james-wheeler-1592461.jpg');
-        
+
+    }
+
+    .hero-content h1 {
+
+        line-height: 6rem;
     }
 
     .hero-content {
@@ -277,7 +301,7 @@ footer {
         max-width: 50vw;
     }
 
-    
+
 
     .hero-content button {
         font-weight: bold;
@@ -293,9 +317,14 @@ footer {
         min-height: 100vh;
     }
 
+    video{
+        width: 70vw;
+        
+    }
 
 
-      
+
+
 
     .bento-container {
         display: grid;
@@ -351,7 +380,7 @@ footer {
         grid-template-rows: auto;
     }
 
-    .map iframe{
+    .map iframe {
         height: 50vh;
     }
 
