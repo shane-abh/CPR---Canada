@@ -135,12 +135,14 @@ video {
     min-height: 50vh;
     border-radius: 1.5em;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    background:  linear-gradient(0deg, rgba(215, 26, 33, 0.64) 7.3%, rgba(217, 218, 242, 0.47) 91.32%);
+    /* background:  linear-gradient(0deg, rgba(215, 26, 33, 0.64) 7.3%, rgba(217, 218, 242, 0.47) 91.32%); */
 }
 
 .event-container img {
-    width: 90vw;
+    width: 70vw;
     border-radius: 1em;
 
 }
