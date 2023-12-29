@@ -131,7 +131,7 @@ video {
 
 .event-container {
     padding: 1em;
-    min-height: 80vh;
+    min-height: 50vh;
     display: flex;
     align-items: center;
 }
